@@ -1,0 +1,84 @@
+<canvas #bg id="canvas-bg"></canvas>
+<div class="cursor-dot"></div><div class="cursor-outline"></div>
+
+@if (p(); as d) {
+<nav class="nav">
+  <a href="#top" class="logo">{{ d.name.split(' ')[0] }}<span>.</span></a>
+  <div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav>
+
+<main class="container" id="top">
+
+  <header class="hero card">
+    <div class="hero-text">
+      <div class="badge"><span class="dot"></span> Available for Senior Full Stack Roles</div>
+      <h1>Hi, I'm <span class="grad">{{ d.name }}</span></h1>
+      <p class="tagline">{{ d.title }}</p>
+      <p class="muted">📍 {{ d.location }}</p>
+      <div class="row">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="assets/resume.pdf" download>Download CV</a>
+        <a class="btn" [href]="d.linkedin" target="_blank">LinkedIn</a>
+        <a class="btn" [href]="d.github" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <img class="avatar" [src]="photo" [alt]="d.name">
+  </header>
+
+  @if (d.ace) {
+  <div class="card ace reveal"><span class="trophy">🏆</span><div><h3>{{ d.ace.title }}</h3><p class="muted">{{ d.ace.text }}</p></div></div>
+  }
+
+  @if (d.about?.length) {
+  <section id="about" class="reveal">
+    <div class="card about">
+      <h2 class="about-h">{{ d.headline }}</h2>
+      <p class="accent sub">{{ d.title }}</p>
+      @for (t of d.about; track t) {<p class="muted big">{{ t }}</p>}
+      <a class="btn primary" href="#contact">Get In Touch</a>
+    </div>
+  </section>
+  }
+
+  @if (d.experience?.length) {<section id="experience" class="reveal"><h2 class="st">Experience</h2>
+    <div class="stack">
+    @for (e of d.experience; track $index) {
+      <div class="card">
+        <div class="exp-h"><div><h3>{{ e.role }} — {{ e.company }}</h3></div></div>
+        <ul>@for (pt of e.points; track pt) {<li>{{ pt }}</li>}</ul>
+      </div>
+    }
+    </div>
+  </section>}
+
+  @if (d.skills?.length) {<section id="skills" class="reveal"><h2 class="st">Skills</h2>
+    <div class="grid">
+    @for (g of d.skills; track g.group) {
+      <div class="card"><h3>{{ g.group }}</h3><div class="tags">@for (s of g.items; track s) {<span class="tag">{{ s }}</span>}</div></div>
+    }
+    </div>
+  </section>}
+
+  @if (d.education?.length || d.awards?.length) {<section class="reveal"><h2 class="st">Education & Awards</h2>
+    <div class="grid">
+      @for (e of (d.education ?? []); track e.degree) {<div class="card"><h3>{{ e.degree }}</h3><p class="muted">{{ e.school }}</p><p class="amber">{{ e.period }}</p></div>}
+      @if (d.awards?.length) {<div class="card"><h3>Honors & Awards</h3>@for (a of d.awards; track a) {<p class="muted">🏆 {{ a }}</p>}</div>}
+    </div>
+  </section>}
+
+  <section id="contact" class="reveal"><h2 class="st">Get in Touch</h2>
+    <div class="card contact">
+      <div><h3>Let's work together</h3><p class="muted">{{ d.email }}<br>{{ d.phone }}</p></div>
+      <form (ngSubmit)="send()" #f="ngForm">
+        <input name="name" [(ngModel)]="form.name" placeholder="Your name" required>
+        <input name="email" type="email" [(ngModel)]="form.email" placeholder="Your email" required>
+        <textarea name="message" rows="4" [(ngModel)]="form.message" placeholder="Your message" required></textarea>
+        <button class="btn primary" type="submit" [disabled]="f.invalid">Send message</button>
+        <p class="accent">{{ sending() }}</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>© {{ d.name }}</footer>
+</main>
+}

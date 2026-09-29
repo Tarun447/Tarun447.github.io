@@ -1,0 +1,157 @@
+{
+  "name": "Tarun Kumar Nanda",
+  "title": "Senior Software Engineer",
+  "location": "Bengaluru, Karnataka, India",
+  "email": "tarunkumarnanda5@gmail.com",
+  "phone": "+91 8599871192",
+  "linkedin": "https://linkedin.com/in/tarun-kumar-nanda",
+  "github": "https://github.com/Tarun447",
+  "ace": {
+    "title": "ACE Award — Accenture (August 2025)",
+    "text": "Recognised for outstanding performance."
+  },
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Accenture",
+      "client": "J.P. Morgan Chase, CIB",
+      "period": "02/2025 – Present",
+      "points": [
+        "Modernized legacy .NET transaction tracking system (Eserve) into Spring Boot microservices, improving scalability and reducing downtime.",
+        "Authored detailed documentation of legacy workflows, enabling smoother knowledge transfer and reducing onboarding time for new developers by 30%.",
+        "Achieved 100% unit test coverage and improved SonarQube compliance score to 95+, ensuring robust code quality and maintainability.",
+        "Containerized applications with Docker and automated deployment using Jules scripts on GKP (JPMC’s Kubernetes platform), cutting deployment effort by 40%.",
+        "Streamlined CI/CD pipelines with Jenkins, reducing release cycle time from weeks to days across DEV and UAT environments.",
+        "Delivered secure, production‑ready REST APIs for frontend integration, enabling faster UI team adoption and reducing integration defects.",
+        "Enhanced collaboration and code quality through peer reviews and static analysis using BMAD, GitHub Copilot, and Claude."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "Accenture",
+      "client": "MOE,Singapore",
+      "period": "06/2024 – 01/2025",
+      "points": [
+        "Designed to store comprehensive school data, encompassing student and academic records, in a centralized database.",
+        "Ensured up to 90% unit test coverage by implementing rigorous testing with Junit and Mockito.",
+        "Diagnosed, analyzed, and resolved defects across UAT and production environments based on client requirements.",
+        "Engineered and optimized automated PDF and Excel report generation using Jaspersoft Studio."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "Capgemini",
+      "client": "Boeing",
+      "period": "10/2021 – 05/2024",
+      "points": [
+        "Worked on OnePDL, a proprietary ETL tool that extracts, processes, validates, and transforms data as per the SPM tool.",
+        "Analyzed business and resource requirements to develop effective solutions.",
+        "Developed microservices for efficient data transformation using Spring Boot, Spring Data JPA, Spring MVC, Swagger API, and MySQL.",
+        "Hands-on experience with JUnit and Mockito, utilizing JaCoCo to ensure high code coverage.",
+        "Basic knowledge of Kafka with Spring Boot for real-time data streaming.",
+        "Familiar with CI/CD pipelines using Jenkins and Docker.",
+        "Managed tasks efficiently using JIRA within an Agile framework to ensure timely project delivery."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "Core & Spring",
+      "items": [
+        "Java",
+        "Java 8",
+        "Spring Boot",
+        "Spring MVC",
+        "Spring Data JPA",
+        "Spring Cache",
+        "Spring Batch",
+        "Spring Scheduler",
+        "MultiThreading",
+        "Spring Security",
+        "Spring Cloud",
+        "Spring AI"
+      ]
+    },
+    {
+      "group": "Frontend",
+      "items": [
+        "Angular"
+      ]
+    },
+    {
+      "group": "Message Queue",
+      "items": [
+        "Kafka",
+        "JMS",
+        "RabbitMQ",
+        "IBM MQ"
+      ]
+    },
+    {
+      "group": "Databases",
+      "items": [
+        "MySQL",
+        "Redis",
+        "Oracle",
+        "Postgres",
+        "MongoDB"
+      ]
+    },
+    {
+      "group": "DevOps & Cloud",
+      "items": [
+        "Jenkins",
+        "Docker",
+        "Grafana",
+        "Prometheus",
+        "AWS",
+        "Kubernetes"
+      ]
+    },
+    {
+      "group": "Quality & Testing",
+      "items": [
+        "JUnit",
+        "Mockito",
+        "JaCoCo",
+        "SonarQube"
+      ]
+    },
+    {
+      "group": "AI Engineering",
+      "items": [
+        "Gen AI",
+        "Agentic AI",
+        "GitHub Copilot",
+        "Claude",
+        "ChatGPT",
+        "BMAD"
+      ]
+    },
+    {
+      "group": "Practices",
+      "items": [
+        "Jira",
+        "Agile Method"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications",
+      "school": "College of Engineering and Technology",
+      "period": "08/2019 – 05/2021"
+    }
+  ],
+  "awards": [
+    "Rising Star, Capgemini",
+    "Best Employee Award"
+  ],
+  "headline": "Java Full Stack Engineer",
+  "about": [
+    "Full-Stack Java Developer with nearly 5 years of experience delivering enterprise-grade applications using Java, Spring Boot, Angular, Docker, and Kubernetes. Proven track record in microservices architecture, RESTful API design, and CI/CD automation for global clients.",
+    "Achieved 100% unit test coverage and a 95+ SonarQube score, cut deployment effort by 40%, and reduced release cycles from weeks to days. Strong expertise in Kafka, MySQL, and AWS.",
+    "Recipient of Accenture's ACE Award for outstanding performance. Passionate about solving complex challenges in fast-paced, collaborative environments.",
+    "Currently exploring Gen AI and agentic AI in the Java ecosystem to build intelligent, LLM-powered enterprise applications."
+  ]
+}

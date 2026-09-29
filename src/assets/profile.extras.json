@@ -1,0 +1,29 @@
+{
+  "headline": "Java Full Stack Engineer",
+  "about": [
+    "Full-Stack Java Developer with nearly 5 years of experience delivering enterprise-grade applications using Java, Spring Boot, Angular, Docker, and Kubernetes. Proven track record in microservices architecture, RESTful API design, and CI/CD automation for global clients.",
+    "Achieved 100% unit test coverage and a 95+ SonarQube score, cut deployment effort by 40%, and reduced release cycles from weeks to days. Strong expertise in Kafka, MySQL, and AWS.",
+    "Recipient of Accenture's ACE Award for outstanding performance. Passionate about solving complex challenges in fast-paced, collaborative environments.",
+    "Currently exploring Gen AI and agentic AI in the Java ecosystem to build intelligent, LLM-powered enterprise applications."
+  ],
+  "skills": [
+    "Angular",
+    "Spring Security",
+    "Spring Cloud",
+    "Spring AI",
+    "Redis",
+    "JMS",
+    "RabbitMQ",
+    "IBM MQ",
+    "Oracle",
+    "Postgres",
+    "MongoDB",
+    "JaCoCo",
+    "SonarQube",
+    "BMAD"
+  ],
+  "awards": [
+    "ACE Award — Accenture (August 2025)"
+  ],
+  "location": "Bengaluru, Karnataka, India"
+}
